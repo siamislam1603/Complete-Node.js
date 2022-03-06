@@ -5,7 +5,8 @@
     "@mui/icons-material": "^5.2.0",
     "@mui/material": "^5.2.1",
     "create-react-app": "^5.0.0",
-    "loadash": "^1.0.0"
+    "loadash": "^1.0.0",
+    "package.json": "^2.0.1"
   },
   "devDependencies": {
     "eslint": "8.2.0",
