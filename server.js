@@ -11,6 +11,7 @@ const server=http.createServer((req,res)=>{
                 <body>
                     <form action='/message' method='POST'>
                         <input type='text' name='messge'>
+                        <input type='submit'>
                     </form>
                 </body>
             </html>
@@ -38,10 +39,9 @@ const server=http.createServer((req,res)=>{
     res.write(`
         <html>
             <head><title>This is the no matched url page</title></head>
-            <body>Nothing!!!!!</body>
+            <body>Nothing so fency!!!!!</body>
         </html>
     `);
     res.end();
 });
-
 server.listen(3000);
