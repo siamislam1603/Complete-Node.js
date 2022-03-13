@@ -11,7 +11,7 @@ router.get('/add-product',(req,res,next)=>{
 router.post('/add-product',(req,res,next)=>{
     products.push({title:req.body.title});
     console.log('posted data',products,req.body.title);
-    res.redirect('/',{pageTitle:'Shop'});
+    res.redirect('/');
 });
 
 module.exports={router,products};
