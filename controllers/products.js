@@ -8,11 +8,11 @@ exports.getAddProduct=(req,res,next)=>{
 exports.postAddProduct=(req,res,next)=>{
     const product=new Product(req.body.title);
     product.save();
-    console.log('posted data',Product.fetchAll(),req.body.title);
     res.redirect('/');
 }
 
 exports.getAllProducts=(req,res,next)=>{
-    const products=Product.fetchAll();
-    res.render('shop',{products:products,pageTitle:'Shop'});
+    Product.fetchAll((products)=>{ 
+        res.render('shop',{products:products,pageTitle:'Shop'});
+    });
 }

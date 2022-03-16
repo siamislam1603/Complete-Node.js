@@ -5,7 +5,8 @@
     <div class="container mt-5">
     <h1>My Products</h1>
     <% if(products.length>0){ %>
-        <ul>Products List</ul>
+        <h3>Products List</h3>
+        <ul>
         <% for(let product of products){ %>
             <li><%= product.title %></li>
         <% } %>
